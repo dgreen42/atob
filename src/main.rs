@@ -66,9 +66,9 @@ mod conversion {
         }
     }
 
-    pub fn get_ext_new(extention: &str) -> String {
+    pub fn get_ext_new(option: &str) -> String {
         let mut delim = String::new();
-        match extention {
+        match option {
             "-c" => delim.push_str(".csv"),
             "-t" => delim.push_str(".tsv"),
             _ => stdout()
